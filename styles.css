@@ -7,20 +7,35 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.row{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about, #discord, #contact, footer {
+    padding: 48px 0;
+}
+
+/*
+
+NAV
+
+*/
+
 nav{
-    background-color: #cafdff;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
-    padding: 0px 16px;
+    background-color: #cafdff;
+    padding: 0 16px;
 }
 
-a{
-    cursor: pointer;
-}
-
-img{
+.nav__logo{
     width: 300px;
 }
 
@@ -28,19 +43,16 @@ img{
     display: flex;
 }
 
-.nav__link{
-    list-style: none;
+.nav__link--wrapper{
+    list-style-type: none;
     padding-left: 16px;
 }
 
-.nav__text{
-    color: black;
+.nav__link{
+    color: #242424;
+    font-size: 20px;
     font-weight: 700;
-    font-size: 24px;
-}
-
-#about, #discord, #contact, footer{
-    padding: 48px 0px;
+    cursor: pointer;
 }
 
 /*
@@ -49,47 +61,42 @@ HEADER
 
 */
 
-.header__wrapper{
+#header{
     background-color: #eadcff;
     height: calc(100vh - 70px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 24px;
-}
-
-.row{
-    width: 100%;
-    max-width: 1300px;
-    margin: 0 auto;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
-.header__title{
+
+.section__description{
+}
+
+.section__title{
     font-size: 72px;
 }
 
-.header__para{
-    font-size: 36px;
-    margin: 16px 0px 24px 0;
+.section__para{
+    font-size: 30px;
+    margin: 16px 0px 24px 0px;
 }
 
 .btn{
     border: none;
-    padding: 8px 16px;
-    font-size: 20px;
     color: white;
     background-color: #05c7cf;
+    padding: 8px 16px;
     cursor: pointer;
+    font-size: 20px;
 }
 
-.header__img{
+img{
     width: 100%;
 }
 
-/* 
+/*
 
 ABOUT
 
@@ -99,9 +106,9 @@ ABOUT
     background-color: #f8ffdc;
 }
 
-.about__title{
+h2{
     text-align: center;
-    font-size: 60px;
+    font-size: 72px;
     margin-bottom: 24px;
 }
 
@@ -111,24 +118,19 @@ ABOUT
     align-items: center;
 }
 
-.about__description--wrapper{
-    padding: 0px 24px;
-    width: 60%;
+.about__para{
+    margin-bottom: 24px;
+    font-size: 20px;
 }
 
-.about__para{
-    font-size: 20px;
-    line-height: 1.5;
-    margin-bottom: 24px;
+.about__para--wrapper{
+    width: 60%;
+    padding: 0 24px;
 }
 
 .about__img--wrapper{
     width: 40%;
     padding: 0 24px;
-}
-
-.about__img{
-    width: 100%;
 }
 
 /* 
@@ -138,5 +140,5 @@ DISCORD
 */
 
 #discord{
-    background-color: #cefeff;
+    background-color: #CEFEFF;
 }
