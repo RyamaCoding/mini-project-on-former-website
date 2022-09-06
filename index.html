@@ -1,66 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mini project</title>
-  <link rel="stylesheet" href="./styles.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini project</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
 
-<body>
-  <nav>
-    <figure>
-      <img src="./assets/FES.svg" alt="Home page image"  class="nav__logo">
-    </figure>
-    <ul class="nav__links">
-      <li class="nav__link--wrapper"><a href="" class="nav__link">About</a></li>
-      <li class="nav__link--wrapper"><a href="" class="nav__link">Discord</a></li>
-      <li class="nav__link--wrapper"><a href="" class="nav__link">Contact</a></li>
-    </ul>
-  </nav>
+  <body>
+    <nav>
+      <figure>
+        <img src="./assets/FES.svg" alt="Home page image" class="nav__logo" />
+      </figure>
+      <ul class="nav__links">
+        <li class="nav__link--wrapper">
+          <a href="#about" class="nav__link">About</a>
+        </li>
+        <li class="nav__link--wrapper">
+          <a href="#discord" class="nav__link">Discord</a>
+        </li>
+        <li class="nav__link--wrapper">
+          <a href="#contact" class="nav__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
 
-  <section id="header">
-    <div class="row">
+    <section id="header">
+      <div class="row">
         <div class="section__description">
           <h1 class="section__title">Best place to learn frontend</h1>
           <p class="section__para">Trying this tutorial again without help</p>
           <button class="btn">Start now</button>
         </div>
         <figure class="section__img--wrapper">
-          <img src="./assets/laptop.png" alt="Header image" class="img">
-        </figure>
-    </div>
-  </section>
-
-  <section id="about">
-    <h2>About</h2>
-    <div class="row">
-      <div class="about__description">
-        <div class="about__para--wrapper">
-          <p class="about__para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis fugit cum rerum itaque in ducimus. Autem explicabo dolorem doloribus accusantium.</p>
-          <p class="about__para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, rerum?</p>
-        </div>
-        <figure class="about__img--wrapper">
-          <img src="./assets/about.jpg" alt="About image" class="img">
+          <img src="./assets/laptop.png" alt="Header image" class="img" />
         </figure>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="discord">
-    <h2>Discord</h2>
-    <div class="row">
-      <div class="about__description">
-        <figure class="about__img--wrapper">
-          <img src="./assets/discord.png" alt="Discord image" class="img">
-        </figure>
-        <div class="about__para--wrapper">
-          <p class="about__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, minima eum officiis praesentium expedita ducimus est perferendis ex sed nihil?</p>
-          <p class="about__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, neque?</p>
+    <section id="about">
+      <h2>About</h2>
+      <div class="row">
+        <div class="about__description">
+          <div class="about__para--wrapper">
+            <p class="about__para">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Perferendis fugit cum rerum itaque in ducimus. Autem explicabo
+              dolorem doloribus accusantium.
+            </p>
+            <p class="about__para">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione,
+              rerum?
+            </p>
+          </div>
+          <figure class="about__img--wrapper">
+            <img src="./assets/about.jpg" alt="About image" class="img" />
+          </figure>
         </div>
       </div>
-    </div>
-  </section>
-</body>
+    </section>
+
+    <section id="discord">
+      <h2>Discord</h2>
+      <div class="row">
+        <div class="about__description">
+          <figure class="about__img--wrapper">
+            <img src="./assets/discord.png" alt="Discord image" class="img" />
+          </figure>
+          <div class="about__para--wrapper">
+            <p class="about__para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Molestias, minima eum officiis praesentium expedita ducimus est
+              perferendis ex sed nihil?
+            </p>
+            <p class="about__para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+              neque?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form action="" class="form">
+        <label for="">Email</label>
+        <input type="email" placeholder="jane@example.com" />
+        <label for="">Message</label>
+        <textarea
+          name=""
+          placeholder="Let's get connected"
+          id=""
+          cols="30"
+          rows="10"
+        ></textarea>
+        <button class="btn">Contact us</button>
+      </form>
+    </section>
+
+    <footer id="footer">
+      <figure class="footer__img">
+        <img src="./assets/FES.svg" alt="Footer img" />
+      </figure>
+      <div class="footer__links--wrapper">
+        <ul class="footer__link">
+          <li class="footer__link--wrapper">About</li>
+          <li class="footer__link--wrapper">Discord</li>
+          <li class="footer__link--wrapper">Contact</li>
+          <li class="footer__link--wrapper">Courses</li>
+        </ul>
+      </div>
+      <p>Copyright &copy; Frontend Simplified</p>
+    </footer>
+  </body>
 </html>
