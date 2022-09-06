@@ -204,3 +204,81 @@ FOOTER
     padding: 0 16px;
     cursor: not-allowed;
 }
+
+/*
+
+SMARTPHONES TABLETS and SMALL PHONES
+
+*/
+
+@media (max-width: 728px){
+    .row{
+        flex-direction: column;
+    }
+
+    .section__description{
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .section__title{
+        font-size: 60px;
+    }
+
+    .section__para{
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .btn{
+        max-width: 240px;
+    }
+
+    .nav__links{
+        display: none;
+    }
+
+    .about__description{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about__para--wrapper{
+        width: 100%;
+    }
+
+    .about__img--wrapper{
+        width: 100%;
+    }
+
+    #discord .about__description{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    form .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 728px;
+    }
+
+    footer{
+        padding: 48px 24px;
+    }
+
+    .footer__img{
+        max-width: 240px;
+    }
+
+    .footer__link{
+        padding: 0 4px;
+        font-size: 18px;
+    }
+}
